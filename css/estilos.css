@@ -1,11 +1,12 @@
 body {
-    background: #8bc34a;
+        background: black;
+    width: center;
     color: white;
-    text-align: center;
   }
   
   a {
     color: inherit;
+    
   }
   
   h1, h2, h3, h4 {
@@ -95,6 +96,7 @@ body {
     left: 50%;
     margin-left: -190px;
     padding-top: 20px;
+    top: 300px;
     padding-left: 190px;
     width: 380px;
     height: 250px;

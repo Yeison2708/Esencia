@@ -51,6 +51,7 @@ body{
 .nav__icon{
     width: 30px;
     display: block;
+    color: white;
 }
 
 .nav__menu--second{
@@ -112,6 +113,7 @@ body{
     margin-left: auto;
     transform: var(--rotate, 0);
     transition: .2s transform;
+    color: white;
 }
 
 .dropdown__content{
@@ -138,3 +140,4 @@ body{
     color: #b6babe;
     text-decoration: none;
 }
+

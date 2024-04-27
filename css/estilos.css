@@ -18,6 +18,8 @@ body{
 .nav:has( .dropdown:target){
     --img1: scale(1);
     --img2: scale(0);
+
+    --clip:  inset(0 0 0 0);
 }
 
 .nav__container{
@@ -59,7 +61,80 @@ body{
     position: absolute;
     background-color: #000;
     width: 75%;
+    max-width: 300px;
     right: 0;
     top: 0;
     bottom: 0;
+
+    padding: 1em;
+    align-content: center;
+    gap: 1rem;
+
+    overflow-y: auto;
+
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+}
+
+.dropdow__list{
+    list-style: none;
+}
+
+.dropdow__link{
+    color: rgb(184, 187, 191);
+    padding: 1em .7em;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    position: relative;
+    background-color: var(--bg, transparent);
+    border-radius: 6px;
+}
+
+.dropdow__list:has( :checked){
+    --rows: 1fr;
+    --rotate: rotate(180deg);
+    --bg:#28303B;
+}
+
+.deopdown__check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropdow__arrow{
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+}
+
+.dropdow__content{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+.dropdow__sub{
+    overflow: hidden;
+
+}
+
+.dropdow__li{
+    width: 85%;
+    background-color: red;
+    list-style: none;
+    margin-left: auto;
+}
+
+.dropdow__anchor{
+    padding: 1em 0;
+    display: block;
+    color: #b6babe;
+    text-decoration: none;
 }

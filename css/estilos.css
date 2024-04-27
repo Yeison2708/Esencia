@@ -76,11 +76,11 @@ body{
     transition: clip-path .5s;
 }
 
-.dropdow__list{
+.dropdown__list{
     list-style: none;
 }
 
-.dropdow__link{
+.dropdown__link{
     color: rgb(184, 187, 191);
     padding: 1em .7em;
     text-decoration: none;
@@ -94,7 +94,7 @@ body{
     border-radius: 6px;
 }
 
-.dropdow__list:has( :checked){
+.dropdown__list:has( :checked){
     --rows: 1fr;
     --rotate: rotate(180deg);
     --bg:#28303B;
@@ -108,31 +108,31 @@ body{
     cursor: pointer;
 }
 
-.dropdow__arrow{
+.dropdown__arrow{
     margin-left: auto;
     transform: var(--rotate, 0);
     transition: .2s transform;
 }
 
-.dropdow__content{
+.dropdown__content{
     display: grid;
     grid-template-rows: var(--rows, 0fr);
     transition: .3s grid-template-rows;
 }
 
-.dropdow__sub{
+.dropdown__sub{
     overflow: hidden;
 
 }
 
-.dropdow__li{
+.dropdown__li{
     width: 85%;
     background-color: red;
     list-style: none;
     margin-left: auto;
 }
 
-.dropdow__anchor{
+.dropdown__anchor{
     padding: 1em 0;
     display: block;
     color: #b6babe;

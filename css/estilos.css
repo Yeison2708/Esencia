@@ -8,7 +8,7 @@
     }
     
     nav{
-        background: #2fcdcd;
+        background: #000000;
         height: 80px;
         width: 100%;
     }
@@ -36,7 +36,7 @@
         text-transform: uppercase;
     }
     li a.active, li a:hover{
-        background: #000090;
+        background: #964444;
         transition: .5s;
     }
     .checkbtn{
@@ -52,7 +52,7 @@
         display: none;
     }
     section{
-        background: url(fondo.jpg) no-repeat;
+        background: url(fondo2.jpg) no-repeat;
         background-size: cover;
         background-position: center center;
         height: calc(100vh - 80px);

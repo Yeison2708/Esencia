@@ -53,7 +53,7 @@
         display: none;
     }
     section{
-        background: url(fondo2.jpg) no-repeat;
+        background: url(fondo5.jpg) no-repeat;
         background-size: cover;
         background-position: center center;
         height: calc(100vh - 80px);
@@ -81,6 +81,7 @@
             left: -100%;
             text-align: center;
             transition: all .5s;
+            opacity: 90%;
         }
         nav ul li{
             display: block;

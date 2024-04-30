@@ -1,0 +1,48 @@
+body{
+    background-image: url("../imgs/fondo2.jpg");
+    justify-content: center;
+    display: flex;
+
+}
+
+.product-class-container{
+    display: block;
+    align-items: center;
+    opacity: 88%;
+    height: 100vh;
+    width: 60vh;
+    background-color: rgb(15, 15, 15);
+    padding: 0px;
+    margin: 0;
+    margin-top: -35px;
+}
+.product-info-container{
+    display: flex;
+    color: aliceblue;
+    justify-content:  space-between;
+    align-items: normal;
+}
+.name-product{
+    color: rgb(224, 207, 207);
+    background-color: rgb(255, 255, 255);
+    width:  150px;
+}
+.name-product > h1{
+    color: rgb(0, 0, 0);
+}
+
+
+
+product-info ,product-price{
+    color: white;
+}
+
+upper-title{
+    color: rgb(255, 234, 0);
+    background-color: aliceblue;
+}
+
+title-container{
+    color: rgb(255, 234, 0);
+    background-color: aliceblue;
+}

@@ -1,0 +1,199 @@
+/* - - - - - - - - - - - - */
+/* F O N T S */
+/* - - - - - - - - - - - - */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* - - - - - - - - - - - - */
+/* V A R I A B L E S */
+/* - - - - - - - - - - - - */
+:root{
+    --color-pri: rgb(254, 255, 255);
+    --color-sec: rgb(85, 85, 101);
+    --ffamily: Poppins, sans-serif;
+}
+
+/* - - - - - - - - - - - - */
+/* R E S E T */
+/* - - - - - - - - - - - - */
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+
+/* - - - - - - - - - - - - */
+/* G E N E R A L */
+/* - - - - - - - - - - - - */
+body{
+    color: var(--color-pri);
+    font-family: var(--ffamily);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav{
+    
+    border-radius: 4px;
+    padding: 8px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: all 0.4s ease-in;
+    
+    a:is(:link, visited){
+        width: 40px;
+        height: 40px;
+        
+        padding: 10px;
+        transition: all 0.4s ease-in-out;
+        svg{
+            opacity: .7;
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+a:is(:hover) {
+    background-color: #000;
+    transform: translateX(-4px);
+    border: 2px solid #fff9;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        h1{
+            font-size: 4rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        h2{
+            font-size: 1.4rem;
+            font-weight: 300;
+            text-align: center;
+        }
+        h3{
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: center;
+        }
+        img{
+            width: 150px;
+        }
+    }
+    menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        a:is(:link, :visited){
+            border-radius: 15px 0 15px 0;
+            background-color: var(--color-pri);
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            text-decoration: none;
+            padding: 8px;
+            transition: all 0.4s ease-in-out;
+            width: 280px;
+            opacity: 70%;
+            span{
+                font-size: 2rem;
+            }
+            
+        }
+        a:is(:hover){
+            background-color: #c49fe7;
+            transform: scale(1.1) translateY(-);
+        }
+
+    }
+    
+}
+
+/* - - - - - - - - - - - - */
+/* M A I N M E N U */
+/* - - - - - - - - - - - - */
+body.menu{
+    background-color: #330055;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.57'%3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233b0a5e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23431566' cx='50' cy='100' r='50'/%3E%3Cg fill='%234b1f6f' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23532977' cx='50' cy='200' r='50'/%3E%3Cg fill='%235c3480' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23643e88' cx='50' cy='300' r='50'/%3E%3Cg fill='%236c4891' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23745299' cx='50' cy='400' r='50'/%3E%3Cg fill='%237c5da2' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238467aa' cx='50' cy='500' r='50'/%3E%3Cg fill='%238c71b3' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23947cbb' cx='50' cy='600' r='50'/%3E%3Cg fill='%239c86c4' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a490cc' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad9bd5' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b5a5dd' cx='50' cy='800' r='50'/%3E%3Cg fill='%23bdafe6' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c5b9ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23cdc4f7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D5CEFF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+/* - - - - - - - - - - - - */
+/* M A I N M E N U */
+/* - - - - - - - - - - - - */
+body.rdesign{
+    background-color: #1F3F55;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.46'%3E%3Ccircle fill='%231F3F55' cx='50' cy='0' r='50'/%3E%3Cg fill='%2325455d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%232a4b65' cx='50' cy='100' r='50'/%3E%3Cg fill='%2330516d' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23365775' cx='50' cy='200' r='50'/%3E%3Cg fill='%233d5e7d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23436486' cx='50' cy='300' r='50'/%3E%3Cg fill='%234a6a8e' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23517196' cx='50' cy='400' r='50'/%3E%3Cg fill='%2358779f' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f7da8' cx='50' cy='500' r='50'/%3E%3Cg fill='%236784b0' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f8ab9' cx='50' cy='600' r='50'/%3E%3Cg fill='%237691c2' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%237f97ca' cx='50' cy='700' r='50'/%3E%3Cg fill='%23879ed3' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%238fa5dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%2398abe5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a1b2ed' cx='50' cy='900' r='50'/%3E%3Cg fill='%23aab8f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23B3BFFF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+
+    header {
+        h1{
+            font-size: 3rem;
+        }
+    }
+}

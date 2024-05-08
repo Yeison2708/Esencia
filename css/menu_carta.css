@@ -5,6 +5,14 @@ body{
 
 }
 
+body.menu{
+    background-color: #000000;
+    background-image: url(/imgs/8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
 .product-class-container{
     display: block;
     align-items: center;

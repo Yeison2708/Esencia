@@ -1,8 +1,9 @@
+@import url(https://db.onlinewebfonts.com/c/8ca2a74639a88909f99af766fa0c4d40?family=Mason);
 body{
     background-image: url("../imgs/8.jpg");
     justify-content: center;
     display: flex;
-
+    font-family: "Mason";
 }
 
 body.menu{

@@ -133,20 +133,6 @@ main{
             font-family: 'Ancient Geek', sans-serif;
             color: #cfcfcf;
         }
-        h2{
-            font-size: 1.7rem;
-            font-weight: 200;
-            text-align: center;
-            font-family: 'Euphorigenic', sans-serif;
-            color: #cfcfcf;
-        }
-        h3{
-            font-size: 1.4rem;
-            font-weight: 10;
-            text-align: center;
-            font-family: 'Bleeding Cowboys', sans-serif;
-            color: #cfcfcf;
-        }
         img{
             width: 150px;
         }

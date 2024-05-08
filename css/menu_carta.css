@@ -1,5 +1,5 @@
 body{
-    background-image: url("../imgs/fondo5.jpg");
+    background-image: url("../imgs/8.jpg");
     justify-content: center;
     display: flex;
 
@@ -14,7 +14,7 @@ body{
     background-color: rgb(15, 15, 15);
     padding: 0px;
     margin: 0;
-    margin-top: -35px;
+    margin-top: 15px;
 }
 .product-info-container{
     display: flex;
@@ -26,6 +26,14 @@ body{
     color: rgb(224, 207, 207);
     background-color: rgb(255, 255, 255);
     width:  150px;
+    padding: -10px;
+    margin: -20px ;
+    outline: 2px solid rgb(134, 128, 128);
+    opacity: 100%;
+    justify-content: right;
+    display: block;
+    text-align: center;
+
 }
 .name-product > h1{
     color: rgb(0, 0, 0);

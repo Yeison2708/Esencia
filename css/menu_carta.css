@@ -1,65 +1,82 @@
 @import url(https://db.onlinewebfonts.com/c/8ca2a74639a88909f99af766fa0c4d40?family=Mason);
-body{
-    background-image: url("../imgs/8.jpg");
-    justify-content: center;
-    display: flex;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../imgs/8.jpg);
     font-family: "Mason";
 }
 
-body.menu{
-    background-color: #000000;
-    background-image: url(/imgs/8.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    
-}
-
-.product-class-container{
-    display: block;
-    align-items: center;
-    opacity: 88%;
-    height: 100vh;
-    width: 60vh;
-    background-color: rgb(15, 15, 15);
-    padding: 0px;
-    margin: 0;
-    margin-top: 15px;
-}
-.product-info-container{
+.menu {
     display: flex;
-    color: aliceblue;
-    justify-content:  space-between;
-    align-items: normal;
+    justify-content: space-around;
+    padding: 20px;
 }
-.name-product{
-    color: rgb(224, 207, 207);
-    background-color: rgb(255, 255, 255);
-    width:  150px;
-    padding: -10px;
-    margin: -20px ;
-    outline: 2px solid rgb(134, 128, 128);
-    opacity: 100%;
-    justify-content: right;
-    display: block;
+
+.category {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(9, 9, 9, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.category h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
     text-align: center;
-
-}
-.name-product > h1{
-    color: rgb(0, 0, 0);
+    font-size: 1.8em;
 }
 
-
-
-product-info ,product-price{
-    color: white;
+.item {
+    margin-bottom: 20px;
+    background-color: #7b7a7a;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-upper-title{
-    color: rgb(255, 234, 0);
-    background-color: aliceblue;
+.item:hover {
+    transform: translateY(-5px);
 }
 
-title-container{
-    color: rgb(255, 234, 0);
-    background-color: aliceblue;
+.item img {
+    width: 100%;
+    max-width: 350px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Añade bordes redondeados */
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #b0a638;
+}
+
+.info p {
+    margin: 10px 0;
+    color: #b0a638;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff4500;
+    text-align: right;
 }

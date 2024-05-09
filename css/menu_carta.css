@@ -19,6 +19,7 @@ body {
 
 .category {
     background-color: #000000;
+    opacity: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(255, 255, 255);
     padding: 20px;

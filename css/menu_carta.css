@@ -24,9 +24,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(255, 255, 255);
     padding: 20px;
-    width: 45%;
+    width: 40%; /* Reducimos el ancho a 40% */
     margin: 0 auto;
     color: white;
+    margin-bottom: 30px; /* Añadimos un margen inferior para separación */
 }
 
 .category h2 {

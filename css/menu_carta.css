@@ -2,32 +2,41 @@
 @import url('https://fonts.cdnfonts.com/css/texturina');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Mason", Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
     background-attachment: fixed;
     background-size: cover;
     background-image: url(../imgs/8.jpg);
-    font-family: "Mason";
 }
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
 .category {
-    background-color: #000000;
-    opacity: 90%;
+    background-color: #000;
+    opacity: 0.9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     padding: 20px;
-    width: 40%; /* Reducimos el ancho a 40% */
-    margin: 0 auto;
+    width: 45%; /* Cada categoría ocupa el 45% del ancho */
+    margin: 10px;
     color: white;
-    margin-bottom: 30px; /* Añadimos un margen inferior para separación */
+    box-sizing: border-box;
+    min-width: 300px;
+    flex-grow: 1;
 }
 
 .category h2 {
@@ -52,10 +61,9 @@ body {
 }
 
 .item img {
-    width: 100%;
-    max-width: 350px; /* Ajusta el tamaño máximo de la imagen */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 10px; /* Añade bordes redondeados */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
@@ -65,6 +73,7 @@ body {
 
 .info {
     padding: 15px;
+    text-align: center;
 }
 
 .info h3 {
@@ -75,9 +84,8 @@ body {
 
 .info p {
     margin: 10px 0;
-    color: #ffffff;
+    color: #fff;
     font-family: 'Texturina', sans-serif;
-
 }
 
 .price {
@@ -86,7 +94,20 @@ body {
     color: #ff4500;
     text-align: right;
 }
+
 .header img {
-    width: 100px; /* Ajusta el tamaño del logo */
+    width: 100px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .category {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
 }

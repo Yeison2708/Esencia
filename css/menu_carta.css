@@ -110,4 +110,52 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    
+    .item {
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    
+    .item img {
+        border-radius: 5px;
+    }
+
+    .info h3 {
+        font-size: 1.2em;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+
+    .price {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 375px) { /* Ajustes específicos para iPhones */
+    .category {
+        padding: 10px;
+    }
+
+    .item {
+        margin-bottom: 5px;
+        border-radius: 3px;
+    }
+    
+    .item img {
+        border-radius: 3px;
+    }
+
+    .info h3 {
+        font-size: 1em;
+    }
+
+    .info p {
+        font-size: 0.9em;
+    }
+
+    .price {
+        font-size: 0.9em;
+    }
 }

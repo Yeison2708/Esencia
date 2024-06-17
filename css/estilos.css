@@ -195,3 +195,7 @@ body.rdesign header h1 {
     background-color: rgb(187, 44, 44);
     border-radius: 0 15px 0 15px;
 }
+/* --------
+R E S E T
+----------*/
+@import url('reset.css');

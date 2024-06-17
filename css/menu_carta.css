@@ -111,3 +111,7 @@ body {
         align-items: center;
     }
 }
+/* --------
+R E S E T
+----------*/
+@import url('reset.css');

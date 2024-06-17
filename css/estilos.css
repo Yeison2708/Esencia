@@ -1,8 +1,8 @@
 /* - - - - - - - - - - - - */
 /* F O N T S */
 /* - - - - - - - - - - - - */
-@import url('https://fonts.cdnfonts.com/css/texturina');
 @import url(https://db.onlinewebfonts.com/c/8ca2a74639a88909f99af766fa0c4d40?family=Mason);
+@import url('https://fonts.cdnfonts.com/css/texturina');
 /* - - - - - - - - - - - - */
 /* V A R I A B L E S */
 /* - - - - - - - - - - - - */
@@ -40,7 +40,6 @@ img, picture, svg, video, canvas{
     max-width: 100%;
     height: auto; 
     vertical-align: middle; 
-    font-style: italic; 
     background-repeat: no-repeat; 
     background-size: cover;
 }
@@ -129,7 +128,7 @@ main{
             font-size: 6rem;
             font-weight: 300;
             text-align: center;
-            font-family: "Mason";
+            font-family: "Mason", Arial, sans-serif;
             color: #cfcfcf;
         }
         img{
@@ -190,7 +189,7 @@ body.rdesign{
     header {
         h1{
             font-size: 3rem;
-            font-family: "Mason";
+            font-family: "Mason", Arial, sans-serif;
         }
     }
 }

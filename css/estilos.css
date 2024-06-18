@@ -9,7 +9,6 @@
 :root{
     --color-pri: rgb(182, 155, 55);
     --color-sec: rgb(0, 0, 0);
-    --ffamily: Poppins, sans-serif;
 }
 
 /* --------
@@ -38,7 +37,6 @@ img, picture, svg, video, canvas{
     max-width: 100%;
     height: auto; 
     vertical-align: middle; 
-    font-style: italic; 
     background-repeat: no-repeat; 
     background-size: cover;
 }

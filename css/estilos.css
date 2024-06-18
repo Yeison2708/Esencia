@@ -12,6 +12,13 @@
     --ffamily: Poppins, sans-serif;
 }
 
+/* - - - - - - - - - - - - */
+/* R E S E T */
+/* - - - - - - - - - - - - */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* --------
 R E S E T
 ----------*/
